@@ -1,17 +1,21 @@
-# trace_skeleton.py
+# The `trace_skeleton` Python package
 
-The python library that calls C APIs directly, wrapped using SWIG.
+A python package for tracing the skeleton of a 2D image. This work uses the
+[Skeleton Tracing algorithm](https://github.com/LingDong-/skeleton-tracing)
+developed by [LingDong](https://github.com/LingDong-).
+This repo provides an easy to install python package for tracing the skeleton.
+This is done to ease the use of the algorithm in other Python projects. We've
+taken the SWIG C implementation for optimal performance.
 
 ## Usage
-
-The following functions take in an image representation and return set of polylines (i.e. list of list of tuples).
-
-- `trace_skeleton.from_numpy(arr)` input numpy array
-- `trace_skeleton.from_list(arr,w,h)` input flat python list and width and height
-- `trace_skeleton.from_list2d(arr)` input python list of list
-
+Quick and easy installation:
+```bash
+pip install trace_skeleton
+```
 
 ## Example
+The examples shown are a copy-paste from the
+[original repo](https://github.com/LingDong-/skeleton-tracing).
 
 ```python
 import trace_skeleton
@@ -34,7 +38,9 @@ cv2.imshow('',im);cv2.waitKey(0)
 
 ## Advanced
 
-The aforementioned API's have a tiny linear time overhead for transforming input and output between internal datastructures and python objects. Alternatively, you can use the following: 
+The aforementioned API's have a tiny linear time overhead for transforming input
+and output between internal datastructures and python objects. Alternatively,
+you can use the following: 
 
 ```python
 from trace_skeleton import *
@@ -61,10 +67,3 @@ while (len_polyline() != -1):
 		print(x,y)
 	print("\n")
 ```
-
-## Build from Source
-
-Run `compile.sh`. You may need to modify the python include path.
-
-**Developed at [Frank-Ratchye STUDIO for Creative Inquiry](https://studioforcreativeinquiry.org) at Carnegie Mellon University.**
-
