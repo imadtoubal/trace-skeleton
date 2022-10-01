@@ -10,7 +10,7 @@ taken the SWIG C implementation for optimal performance.
 ## Usage
 Quick and easy installation:
 ```bash
-pip install trace_skeleton
+pip install trace-skeleton
 ```
 
 ## Example
