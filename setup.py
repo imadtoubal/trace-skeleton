@@ -27,7 +27,7 @@ _trace_skeleton = Extension(
 )
 
 setup(name='trace_skeleton',
-      version='0.1.1',
+      version='0.1.2',
       author="SWIG Docs",
       description="""Simple swig example from docs""",
       ext_modules=[_trace_skeleton],

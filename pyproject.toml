@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "trace_skeleton"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Imad Toubal", email="imad.toubal@gmail.com" },
 ]
