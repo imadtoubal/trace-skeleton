@@ -27,8 +27,8 @@ _trace_skeleton = Extension(
 )
 
 setup(name='trace_skeleton',
-      version='0.1.2',
-      author="SWIG Docs",
-      description="""Simple swig example from docs""",
+      version='0.1.6',
+      author="Imad Toubal",
+      description="""A python package for tracing the skeleton of a 2D image""",
       ext_modules=[_trace_skeleton],
       py_modules=["trace_skeleton"])
